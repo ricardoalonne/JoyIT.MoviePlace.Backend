@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessLogic\JoyIT.MoviePlace.Context\JoyIT.MoviePlace.Context.csproj" />
+    <ProjectReference Include="..\..\BusinessLogic\JoyIT.MoviePlace.Service\JoyIT.MoviePlace.Service.csproj" />
+    <ProjectReference Include="..\..\BusinessLogic\JoyIT.MoviePlace.UnitOfWork\JoyIT.MoviePlace.UnitOfWork.csproj" />
+  </ItemGroup>
+
+</Project>

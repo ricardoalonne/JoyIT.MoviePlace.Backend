@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.17" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.8" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.8" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessLogic\JoyIT.MoviePlace.Context\JoyIT.MoviePlace.Context.csproj" />
+    <ProjectReference Include="..\..\BusinessLogic\JoyIT.MoviePlace.Service\JoyIT.MoviePlace.Service.csproj" />
+    <ProjectReference Include="..\..\BusinessLogic\JoyIT.MoviePlace.UnitOfWork\JoyIT.MoviePlace.UnitOfWork.csproj" />
+    <ProjectReference Include="..\..\BusinessModel\JoyIT.MoviePlace.DataTransferObject\JoyIT.MoviePlace.DataTransferObject.csproj" />
+    <ProjectReference Include="..\..\WebApi\JoyIT.MoviePlace.WebApi\JoyIT.MoviePlace.WebApi.csproj" />
+  </ItemGroup>
+
+</Project>

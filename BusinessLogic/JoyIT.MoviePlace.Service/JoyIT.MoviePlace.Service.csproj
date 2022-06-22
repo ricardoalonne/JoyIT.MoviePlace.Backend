@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessModel\JoyIT.MoviePlace.DataTransferObject\JoyIT.MoviePlace.DataTransferObject.csproj" />
+    <ProjectReference Include="..\..\Common\JoyIT.MoviePlace.Common\JoyIT.MoviePlace.Common.csproj" />
+    <ProjectReference Include="..\JoyIT.MoviePlace.UnitOfWork\JoyIT.MoviePlace.UnitOfWork.csproj" />
+  </ItemGroup>
+
+</Project>
